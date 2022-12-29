@@ -1,0 +1,142 @@
+:root{
+    --main-green: rgb(38, 135, 127);
+    --hover-green: rgba(38, 135, 127, 0.719);
+    --dark-green: rgb(14, 50, 47); /* monochromatic color*/
+    --light-green:  rgb(224, 235, 234); /* licgther base color*/
+    --purple: #4e2687; /*  split complementary color*/
+    --body-text-color:#1e1e1e;
+    --body-bg-color:#ffff;
+    --body-grey-color:#eeeff7;
+}
+body{
+    background-color: var(--body-bg-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--body-text-color);
+}
+main{
+    margin-left: 5%;
+    margin-right:5%;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 2rem;
+    color: var(--main-green);
+    margin: 0px 0px 10px 0px;
+    border-bottom: 2px solid var(--main-green);
+}
+
+#imgheader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 150px;
+    
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    border-top: 2px solid var(--main-green);
+    border-bottom: 2px solid var(--main-green);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 20px;
+    
+}
+nav li a{
+    text-decoration: none;
+    color:var(--body-text-color);
+    text-transform: uppercase;
+}
+nav li a:hover{
+    color: var(--main-green);
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+#banner{
+    padding: 50px 20px;
+    margin:15px 0px;
+    background-color: var(--light-green);
+    text-align: center;
+    width: 100%;
+}    
+#banner em{
+    color: var(--dark-green);
+    text-align: center;
+    vertical-align:middle;
+    font-size: 25px;
+    margin: 10px;
+}
+.banner_img{
+    width: 70px;
+    height: auto;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width:100%;
+    margin: 15px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid var(--main-green);
+}
+.article_txt{
+    padding: 10px;
+}
+article figure{
+    flex:1;
+    margin:5px;
+}
+article img{
+    width: 100%;
+    height:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.copyright{
+    color: grey;
+    font-size: 0.7rem;
+    margin-top: 0px;
+}
+.btn{
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--main-green);
+    color: white;
+    border:none;
+    border-top: 2px solid var(--main-green);
+    padding: 20px 12px;
+       
+}
+.btn:hover{
+    background-color: var(--light-green);
+    color: var(--main-green);
+
+}
+footer{
+    display: flex;
+    background-color: var(--light-green);
+}
+footer div{
+    flex: 1;
+    padding:10px;
+}
+#left{
+    text-align: left;
+
+}
+#right{
+    text-align: right;
+    vertical-align: top;
+    font-size: 12px;
+}
+#imgfooter{
+    height: 3rem;
+    padding:0px 0.5rem 0px 0.5rem;
+}
